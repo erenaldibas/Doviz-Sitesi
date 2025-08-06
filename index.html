@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Kuru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>💱 Döviz Kuru Takip</h1>
+    </header>
+    <main>
+        <div class="converter">
+            <label for="from">Dönüştürülecek Para:</label>
+            <select id="from">
+                <option value="USD">Dolar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Sterlin (GBP)</option>
+                <option value="TRY">Türk Lirası (TRY)</option>
+            </select>
+            <label for="to">Hedef Para:</label>
+            <select id="to">
+                <option value="TRY">Türk Lirası (TRY)</option>
+                <option value="USD">Dolar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="GBP">Sterlin (GBP)</option>
+            </select>
+
+            <label for="amount">Miktar:</label>
+            <input type="number" id="amount" value="1">
+            <button id="convertBtn">Çevir</button>
+
+        </div>
+        <!--Sonuç-->
+        <div id="result"></div>
+        <h2>📊 Güncel Kurlar</h2>
+        <table id="rateTable" border="1" style="margin: auto; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Para Birimi</th>
+                    <th id="rateHeader">Değer</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; Cemal Eren Aldıbaş | Döviz Kuru Takip | Tüm Hakları Saklıdır</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
